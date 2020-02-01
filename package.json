@@ -1,0 +1,29 @@
+{
+  "name": "week2assigment",
+  "version": "1.0.0",
+  "description": "Basic Express Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm index.js",
+    "test": "mocha -r esm --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/morio-uci/week2assignment.git"
+  },
+  "author": "John Morio Sakaguchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morio-uci/week2assignment/issues"
+  },
+  "homepage": "https://github.com/morio-uci/week2assignment#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.0.1"
+  }
+}
