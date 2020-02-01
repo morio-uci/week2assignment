@@ -19,7 +19,8 @@
   "homepage": "https://github.com/morio-uci/week2assignment#readme",
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "runes": "^0.4.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",

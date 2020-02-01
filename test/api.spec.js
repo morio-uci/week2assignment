@@ -13,6 +13,11 @@ describe ('API suite', () => {
             expect(res.body.reversed).to.equal('dlroW olleH');
 
         });
+        it('expect ?text=encodeURIComponent("Hello 🌎") to return json {reversed: "🌎 olleH"}', async () => {
+            const res = await chai.request(app)
+                .get('/api/v1/reverse-text?text=' + encodeURIComponent("Hello 🌎"));
+            expect(res.body.reversed).to.equal('🌎 olleH');
+        });
         it('expect reverseText query string without "text" field to return a http status 400', async () =>{
             const res = await chai.request(app)
                 .get('/api/v1/reverse-text');

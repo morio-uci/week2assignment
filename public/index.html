@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Express - Assignment 2</title>
+    <link href="/static/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/main.css" rel="stylesheet" />
     <script src="/static/main.js"></script>
+
 </head>
-<body>
-    <h1>Assignment 2 - an Express Server</h1>
-    <input id="text" placeholder="Enter text here">
-    <button id="reverseButton">Reverse Text</button>
-    <input disabled id="reversedText">
+<body class="text-center">
+<div class="action-form">
+    <h1 class="h1 mb-3 font-weight-normal">Assignment 2</h1>
+    <h2 class="h2 mb-3 font-weight-normal">An Express Server</h2>
+    <h3 class="h3 mb-3 font-weight-normal">Reversing a text string via json get ajax</h3>
+    <label for="text" class="sr-only">Input text to be reversed</label>
+    <input id="text" class="form-control" placeholder="Enter text here" />
+    <button id="reverseButton" class="btn btn-lg btn-primary btn-block">Reverse Text</button>
+    <label for="reversedText" class="sr-only">Result of text being reversed</label>
+    <input disabled id="reversedText" class="form-control" placeholder="Text will be reversed here"/>
+    <p class="mt-5 mb-3 text-muted">John Morio Sakaguchi 2020</p>
+</div>
 </body>
 </html>

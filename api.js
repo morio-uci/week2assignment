@@ -1,16 +1,16 @@
-const express = require('express');
-
+import express from 'express';
+import runes from 'runes';
 export const reverseText = () => {
   const router = express.Router();
   router.get('/reverse-text', (req, res, next) => {
       if (typeof(req.query.text) === 'string') {
-          res.json({reversed: req.query.text.split("").reverse().join("")});
+          // runes gets around split not handling emoji properly
+          res.json({reversed: runes(req.query.text).reverse().join("")});
+          next();
       }
-      else
-      {
+      else {
           res.status(400).end();
       }
-      next();
   });
   return router;
 };
